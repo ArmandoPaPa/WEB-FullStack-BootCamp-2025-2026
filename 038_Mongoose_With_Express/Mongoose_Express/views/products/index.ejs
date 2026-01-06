@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+</head>
+<body>
+
+<h1><%= category %> products</h1>
+<ul>
+    <% products.forEach(function(product) { %>
+        <li>
+            <h2><%= product.name %></h2>
+            <a href="/products/<%= product._id %>">More DETAILS on <%= product.name %></a>
+            <p>Price: $<%= product.price %></p>
+            <p>Description: <%= product.description %></p>
+        </li>
+    <% }); %>
+</ul>
+
+<br>
+<a href="/products/new">Add a New Product</a>
+
+<br><br>
+<% if (category !== 'All') { %>
+    <a href="/products">All Products</a>
+<% } %>
+</body>
+</html>
