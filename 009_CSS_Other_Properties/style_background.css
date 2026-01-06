@@ -1,0 +1,19 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-color: purple; */
+
+    /* background-image: url("https://mightyinvestor.com/wp-content/uploads/2018/02/Financial-Freedom-Quotes-1060x530.jpg"); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+
+    background: center/40% no-repeat url("https://mightyinvestor.com/wp-content/uploads/2018/02/Financial-Freedom-Quotes-1060x530.jpg"),
+        greenyellow;
+
+    margin: auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
